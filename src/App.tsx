@@ -6,8 +6,8 @@ import Layout from "./components/Layout";
 const App = () => {
   return (
     <>
-      <GlobalStyles />
       <Layout />
+      <GlobalStyles />
     </>
   );
 };
