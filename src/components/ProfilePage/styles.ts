@@ -1,5 +1,7 @@
 import styled, { css } from "styled-components";
 
+import Button from "../Button";
+
 import { LocationOn, Cake } from "../../styles/Icons";
 
 export const Container = styled.div`
@@ -85,13 +87,26 @@ export const ProfileData = styled.div`
   }
 `;
 
-export const EditButton = styled.div``;
+export const EditButton = styled(Button)`
+  position: absolute;
+  top: 2vw;
+  right: 7px;
+`;
 
 const iconCSS = css`
   width: 20px;
   height: 20px;
 
   color: var(--gray);
+
+  padding: 4px 16px;
+  font-size: 13px;
+
+  @media (min-width: 320px) {
+    top: 10px;
+    padding: 10px 19px;
+    font-size: 15px;
+  }
 `;
 
 export const LocationIcon = styled(LocationOn)`

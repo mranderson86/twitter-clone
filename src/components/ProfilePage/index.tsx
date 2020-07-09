@@ -1,15 +1,26 @@
-import React from 'react';
+import React from "react";
 
-import { Container, Banner, Avatar, ProfileData, EditButton, LocationIcon, CakeIcon, Followage, } from './styles';
+import Feed from "../Feed";
 
-const ProfilePage = () =>
+import {
+  Container,
+  Banner,
+  Avatar,
+  ProfileData,
+  LocationIcon,
+  CakeIcon,
+  Followage,
+  EditButton,
+} from "./styles";
+
+const ProfilePage = () => (
   <Container>
     <Banner>
       <Avatar />
     </Banner>
 
     <ProfileData>
-      {/* <EditButton outlined>Editar Perfil</EditButton> */}
+      <EditButton outlined>Editar Perfil</EditButton>
 
       <h1>Anderson Gomes</h1>
       <h2>@mranderson86</h2>
@@ -39,6 +50,9 @@ const ProfilePage = () =>
         </span>
       </Followage>
     </ProfileData>
-  </Container>;
+
+    <Feed />
+  </Container>
+);
 
 export default ProfilePage;
